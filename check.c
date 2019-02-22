@@ -10,7 +10,7 @@ int main()
     for(j=0;j<n;j++)
         printf("%d ",x[j]);
     a = append(11,6);
-    printf("New array after appending is\n");
+    printf("\nNew array after appending is\n");
     for(j=0;j<n;j++)
         printf("%d ",a[j]);
     return 0;
