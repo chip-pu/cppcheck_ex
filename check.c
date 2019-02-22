@@ -5,12 +5,13 @@ int* append(int ele,int pos);
 int main()
 {
     int *a;
+    int j;
     printf("Array elements are\n");
-    for(int j=0;j<n;j++)
+    for(j=0;j<n;j++)
         printf("%d ",x[j]);
     a = append(11,6);
     printf("New array after appending is\n");
-    for(int j=0;j<n;j++)
+    for(j=0;j<n;j++)
         printf("%d ",a[j]);
     return 0;
 }
