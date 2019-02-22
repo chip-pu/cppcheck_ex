@@ -1,9 +1,9 @@
 #include<stdio.h>
 int n=10;
+int x[10] = {1,2,3,4,5,6,7,0,8,9};
 int* append(int ele,int pos);
 int main()
 {
-    int x[10] = {1,2,3,4,5,6,7,0,8,9};
     int *a;
     printf("Array elements are\n");
     for(int j=0;j<n;j++)
@@ -16,10 +16,10 @@ int main()
 }
 int* append(int ele,int pos)
 {
-    int i,a[20];
+    int i;
     for(i=n;i>=pos;i--)
-        a[i+1] = a[i];
-    a[pos] = ele;
+        x[i+1] = x[i];
+    x[pos] = ele;
     n++;
-    return a;
+    return x;
 }
