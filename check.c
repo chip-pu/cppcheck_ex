@@ -3,14 +3,15 @@ int n=10;
 int* append(int ele,int pos);
 int main()
 {
-    int x[9] = {1,2,3,4,5,6,7,0,8,9};
+    int x[10] = {1,2,3,4,5,6,7,0,8,9};
+    int *a;
     printf("Array elements are\n");
     for(int j=0;j<n;j++)
         printf("%d ",x[j]);
-    x = append(11,6);
+    a = append(11,6);
     printf("New array after appending is\n");
     for(int j=0;j<n;j++)
-        printf("%d ",x[j]);
+        printf("%d ",a[j]);
     return 0;
 }
 int* append(int ele,int pos)
